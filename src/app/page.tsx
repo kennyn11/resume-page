@@ -1,65 +1,98 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="min-h-screen bg-white text-gray-900 font-sans p-8 md:p-16 max-w-4xl mx-auto">
+      
+      {/* HEADER */}
+      <header className="border-b-2 border-gray-100 pb-8 mb-8 text-center md:text-left">
+        <h1 className="text-4xl font-bold tracking-tight text-slate-900">Kenny</h1>
+        <div className="mt-2 text-gray-600 flex flex-wrap justify-center md:justify-start gap-4">
+          <a href="mailto:kennyn@usf.edu" className="hover:text-blue-700 underline">kennyn@usf.edu</a>
+          <span>•</span>
+          <a href="#" className="hover:text-blue-700 underline">LinkedIn</a>
+          <span>•</span>
+          <a href="#" className="hover:text-blue-700 underline">GitHub</a>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </header>
+
+      {/* SUMMARY */}
+      <section className="mb-10">
+        <h2 className="text-xl font-bold uppercase tracking-widest text-blue-700 mb-4">Summary</h2>
+        <p className="leading-relaxed text-gray-700">
+          Aspiring Business Analytics professional and current student at the University of South Florida. 
+          Experienced in leadership and customer service with a strong technical foundation in data analysis, 
+          SQL database design, and modern web technologies.
+        </p>
+      </section>
+
+      {/* EDUCATION */}
+      <section className="mb-10">
+        <h2 className="text-xl font-bold uppercase tracking-widest text-blue-700 mb-4">Education</h2>
+        <div className="flex justify-between items-baseline mb-1">
+          <h3 className="font-bold text-lg text-slate-800">University of South Florida</h3>
+          <span className="text-gray-500 text-sm">Expected May 2027</span>
         </div>
-      </main>
-    </div>
+        <p className="text-gray-700 italic">Bachelor of Science in Business Analytics and Information Systems</p>
+      </section>
+
+      {/* EXPERIENCE */}
+      <section className="mb-10">
+        <h2 className="text-xl font-bold uppercase tracking-widest text-blue-700 mb-4">Work Experience</h2>
+        <div className="space-y-8">
+          <div>
+            <div className="flex justify-between items-baseline">
+              <h3 className="font-bold text-lg text-slate-800">Valet Supervisor</h3>
+              <span className="text-gray-500 text-sm italic">2025 — Present</span>
+            </div>
+            <p className="text-gray-700 font-medium mb-2">Evolutions Parking & Guest Services</p>
+            <ul className="list-disc list-outside ml-5 space-y-1 text-gray-600">
+              <li>Manage daily valet operations and oversee a team of attendants to ensure high service standards.</li>
+              <li>Coordinate vehicle logistics and resolve customer concerns in a fast-paced environment.</li>
+            </ul>
+          </div>
+
+          <div>
+            <div className="flex justify-between items-baseline">
+              <h3 className="font-bold text-lg text-slate-800">Customer Service Staff</h3>
+              <span className="text-gray-500 text-sm italic">Previous Dates</span>
+            </div>
+            <p className="text-gray-700 font-medium mb-2">Publix Super Markets</p>
+            <ul className="list-disc list-outside ml-5 space-y-1 text-gray-600">
+              <li>Delivered exceptional service in a high-volume retail environment, handling transactions and customer inquiries.</li>
+              <li>Collaborated with team members to maintain store standards and inventory accuracy.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* PROJECTS (Crucial for Business Analytics) */}
+      <section className="mb-10">
+        <h2 className="text-xl font-bold uppercase tracking-widest text-blue-700 mb-4">Projects</h2>
+        <div className="space-y-6">
+          <div>
+            <h3 className="font-bold text-lg text-slate-800">Customer Churn Analysis</h3>
+            <p className="text-gray-600 text-sm italic mb-1">Python, Excel, Tableau</p>
+            <p className="text-gray-700">Conducted a comprehensive churn analysis using a Kaggle dataset to identify key patterns in customer retention.</p>
+          </div>
+          <div>
+            <h3 className="font-bold text-lg text-slate-800">SQL Database for Inventory</h3>
+            <p className="text-gray-600 text-sm italic mb-1">SQL Server Management Studio</p>
+            <p className="text-gray-700">Designed and implemented a relational database to track resources.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* SKILLS */}
+      <section className="mb-10">
+        <h2 className="text-xl font-bold uppercase tracking-widest text-blue-700 mb-4">Skills</h2>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-y-3 text-gray-700">
+          <div className="flex items-center gap-2"><span>•</span> Python & SQL</div>
+          <div className="flex items-center gap-2"><span>•</span> Tableau</div>
+          <div className="flex items-center gap-2"><span>•</span> JavaScript</div>
+          <div className="flex items-center gap-2"><span>•</span> HTML & CSS</div>
+        
+        </div>
+      </section>
+
+    </main>
   );
 }

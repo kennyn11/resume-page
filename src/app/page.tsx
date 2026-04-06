@@ -7,10 +7,22 @@ export default function Home() {
         <h1 className="text-4xl font-bold tracking-tight text-slate-900">Kenny</h1>
         <div className="mt-2 text-gray-600 flex flex-wrap justify-center md:justify-start gap-4">
           <a href="mailto:kennyn@usf.edu" className="hover:text-blue-700 underline">kennyn@usf.edu</a>
-          <span>•</span>
-          <a href="#" className="hover:text-blue-700 underline">LinkedIn</a>
-          <span>•</span>
-          <a href="#" className="hover:text-blue-700 underline">GitHub</a>
+          <a 
+  href="https://www.linkedin.com/in/kennynguyen11/" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className="text-blue-700 hover:underline hover:text-blue-900 transition-colors"
+>
+  LinkedIn
+</a>
+          <a 
+  href="https://github.com/kennyn11" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className="text-blue-700 hover:underline hover:text-blue-900 transition-colors"
+>
+  GitHub
+</a>
         </div>
       </header>
 
@@ -53,7 +65,7 @@ export default function Home() {
           <div>
             <div className="flex justify-between items-baseline">
               <h3 className="font-bold text-lg text-slate-800">Customer Service Staff</h3>
-              <span className="text-gray-500 text-sm italic">Previous Dates</span>
+              <span className="text-gray-500 text-sm italic">2023-2025</span>
             </div>
             <p className="text-gray-700 font-medium mb-2">Publix Super Markets</p>
             <ul className="list-disc list-outside ml-5 space-y-1 text-gray-600">

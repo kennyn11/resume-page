@@ -1,10 +1,12 @@
-# Next.js Professional Resume Project
+# Next.js Resume Project - Kenny
 
-A single-page resume application built using Next.js (App Router) and Tailwind CSS. This project demonstrates the ability to scaffold a modern web app, use semantic HTML, and apply utility-first CSS styling.
+A professional, single-page resume website built using Next.js (App Router) and styled with Tailwind CSS. This project focuses on semantic HTML, utility-first CSS, and modern web project structure.
 
 ## How to Run Locally
 
-1. **Clone the repository** (or download the ZIP).
-2. **Install dependencies**:
+To get this project running on your own machine, follow these steps:
+
+1. **Clone the repository** to your local machine.
+2. **Install the dependencies** (this creates your node_modules folder):
    ```bash
    npm install

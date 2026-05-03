@@ -1,6 +1,14 @@
 # Next.js Resume Project - Kenny
 
-A professional, single-page resume website built using Next.js (App Router) and styled with Tailwind CSS. This project focuses on semantic HTML, utility-first CSS, and modern web project structure.
+A A high-performance, responsive single-page resume built with modern web technologies. This project showcases the implementation of Next.js, Tailwind CSS, and Semantic HTML to create a clean, professional digital presence
+# Key Features:
+Responsive Design: Fully optimized for mobile, tablet, and desktop views.
+
+Performance Focused: Leveraging Next.js App Router for optimized loading states.
+
+Clean Architecture: Modular component structure for high maintainability.
+
+Accessible UI: Built with semantic HTML tags to ensure screen-reader compatibility.
 
 ## How to Run Locally
 
